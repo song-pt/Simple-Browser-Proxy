@@ -1,6 +1,4 @@
-# Browser Data Gateway v2
-
-完全重新开发的本地渲染数据网关。服务器获取远端 HTML/CSS/图片/脚本，改写其中的资源地址后返回，用户浏览器负责 DOM、CSS、JavaScript 渲染和交互。不包含 Chromium、VNC 或远程桌面代码。
+# Browser Data Gateway
 
 ## 系统要求
 
