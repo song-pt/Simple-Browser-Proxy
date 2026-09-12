@@ -1,0 +1,13 @@
+services:
+  gateway:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "${PORT:-6789}:6789"
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
